@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaHire Technologies — Connecting Talent With Opportunity</title>
+  <meta name="description" content="NovaHire Technologies helps professionals find meaningful career opportunities. Explore open positions and take the next step in your journey." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ── Header ── -->
+  <header class="header" id="header">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a href="index.html" class="navbar__logo" aria-label="NovaHire Technologies Home">
+        <img src="assets/logo.svg" alt="NovaHire Technologies" width="180" height="40" />
+      </a>
+      <div class="navbar__links">
+        <a href="index.html" class="nav-link" id="nav-home">Home</a>
+        <a href="jobs.html" class="nav-link" id="nav-jobs">Jobs</a>
+        <a href="about.html" class="nav-link" id="nav-about">About</a>
+        <a href="contact.html" class="nav-link" id="nav-contact">Contact</a>
+      </div>
+      <a href="jobs.html" class="btn btn--primary btn--sm navbar__cta" id="nav-view-jobs">View Jobs</a>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ── Mobile Menu ── -->
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+  <aside class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <div class="mobile-menu__header">
+      <img src="assets/logo.svg" alt="NovaHire Technologies" width="150" height="36" />
+      <button class="mobile-menu__close" id="mobile-menu-close" aria-label="Close menu">
+        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <nav aria-label="Mobile navigation links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="jobs.html" class="mobile-nav-link">Jobs</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+      <div class="mobile-menu__cta">
+        <a href="jobs.html" class="btn btn--primary" style="width:100%">View Jobs</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main>
+    <!-- ── Hero ── -->
+    <section class="hero" id="hero">
+      <div class="container hero__content">
+        <span class="hero__badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          Now Hiring
+        </span>
+        <h1 class="hero__title">Find Your Next Opportunity</h1>
+        <p class="hero__subtitle">
+          Explore meaningful career opportunities and take the next step in your professional journey.
+        </p>
+        <div class="hero__actions">
+          <a href="jobs.html" class="btn btn--primary btn--lg" id="hero-view-jobs">View Jobs</a>
+          <a href="about.html" class="btn btn--secondary btn--lg" id="hero-learn-more">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Featured Jobs ── -->
+    <section class="section" id="featured-jobs">
+      <div class="container text-center">
+        <span class="section-label">Open Positions</span>
+        <h2 class="section-title">Featured Jobs</h2>
+        <p class="section-subtitle">
+          Browse our latest openings and find the role that fits your skills and ambitions.
+        </p>
+        <div class="jobs-grid" id="featured-jobs-grid">
+          <!-- Rendered by JS -->
+        </div>
+        <div style="margin-top:40px">
+          <a href="jobs.html" class="btn btn--outline" id="see-all-jobs">See All Positions</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Why Join Us ── -->
+    <section class="section section--alt" id="why-join">
+      <div class="container text-center">
+        <span class="section-label">Why NovaHire</span>
+        <h2 class="section-title">Why Join Us</h2>
+        <p class="section-subtitle">
+          We believe in creating an environment where talent thrives and innovation leads the way.
+        </p>
+        <div class="features-grid">
+          <div class="feature-card fade-in" id="feature-growth">
+            <div class="feature-card__icon">
+              <svg class="icon icon--lg" aria-hidden="true"><use href="#icon-zap"/></svg>
+            </div>
+            <h3 class="feature-card__title">Growth-Oriented Culture</h3>
+            <p class="feature-card__text">Continuous learning opportunities, mentorship programs, and a clear career progression path for every team member.</p>
+          </div>
+          <div class="feature-card fade-in" id="feature-tech">
+            <div class="feature-card__icon">
+              <svg class="icon icon--lg" aria-hidden="true"><use href="#icon-code"/></svg>
+            </div>
+            <h3 class="feature-card__title">Modern Tech Stack</h3>
+            <p class="feature-card__text">Work with cutting-edge technologies and tools. We stay current so our teams can do their best work.</p>
+          </div>
+          <div class="feature-card fade-in" id="feature-balance">
+            <div class="feature-card__icon">
+              <svg class="icon icon--lg" aria-hidden="true"><use href="#icon-heart"/></svg>
+            </div>
+            <h3 class="feature-card__title">Work-Life Balance</h3>
+            <p class="feature-card__text">Flexible working arrangements, hybrid options, and a supportive environment that respects personal time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Statistics ── -->
+    <section class="section" id="stats">
+      <div class="container text-center">
+        <span class="section-label">At a Glance</span>
+        <h2 class="section-title">Our Platform</h2>
+        <p class="section-subtitle">
+          Key highlights from the NovaHire platform.
+        </p>
+        <div class="stats-grid">
+          <div class="stat-card fade-in" id="stat-positions">
+            <div class="stat-card__icon">
+              <svg class="icon icon--lg" aria-hidden="true"><use href="#icon-briefcase"/></svg>
+            </div>
+            <div class="stat-card__number">5</div>
+            <div class="stat-card__label">Open Positions</div>
+          </div>
+          <div class="stat-card fade-in" id="stat-categories">
+            <div class="stat-card__icon">
+              <svg class="icon icon--lg" aria-hidden="true"><use href="#icon-layers"/></svg>
+            </div>
+            <div class="stat-card__number">4</div>
+            <div class="stat-card__label">Job Categories</div>
+          </div>
+          <div class="stat-card fade-in" id="stat-locations">
+            <div class="stat-card__icon">
+              <svg class="icon icon--lg" aria-hidden="true"><use href="#icon-location"/></svg>
+            </div>
+            <div class="stat-card__number">5</div>
+            <div class="stat-card__label">Locations</div>
+          </div>
+          <div class="stat-card fade-in" id="stat-modes">
+            <div class="stat-card__icon">
+              <svg class="icon icon--lg" aria-hidden="true"><use href="#icon-users"/></svg>
+            </div>
+            <div class="stat-card__number">3</div>
+            <div class="stat-card__label">Work Modes</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="cta-section" id="cta">
+      <div class="container">
+        <h2>Ready to Get Started?</h2>
+        <p>Browse our open positions and apply today. Your next career move could be just one click away.</p>
+        <a href="jobs.html" class="btn btn--secondary btn--lg" id="cta-explore">Explore Opportunities</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/logo.svg" alt="NovaHire Technologies" width="160" height="36" />
+          <p class="footer__tagline">Connecting Talent With Opportunity. A demo platform built for the Web Developer Internship Task.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Pages</h4>
+          <a href="index.html" class="footer__link">Home</a>
+          <a href="jobs.html" class="footer__link">Jobs</a>
+          <a href="about.html" class="footer__link">About</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+        </div>
+        <div>
+          <h4 class="footer__heading">Positions</h4>
+          <a href="apply.html?job=mern-stack-developer" class="footer__link">MERN Stack Developer</a>
+          <a href="apply.html?job=frontend-developer" class="footer__link">Frontend Developer</a>
+          <a href="apply.html?job=ui-ux-designer" class="footer__link">UI/UX Designer</a>
+          <a href="apply.html?job=python-developer" class="footer__link">Python Developer</a>
+          <a href="apply.html?job=qa-software-testing-engineer" class="footer__link">QA / Testing Engineer</a>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <p class="footer__link">hello@novahire.example</p>
+          <p class="footer__link">+91 00000 00000</p>
+          <p class="footer__link">Bangalore, India</p>
+          <span class="demo-notice">Demo contact details</span>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2026 NovaHire Technologies. This is a fictional company created for an internship assignment.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — NovaHire Technologies</title>
+  <meta name="description" content="Learn about NovaHire Technologies, our mission, values, and what makes us a great place to work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ── Header ── -->
+  <header class="header" id="header">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a href="index.html" class="navbar__logo" aria-label="NovaHire Technologies Home">
+        <img src="assets/logo.svg" alt="NovaHire Technologies" width="180" height="40" />
+      </a>
+      <div class="navbar__links">
+        <a href="index.html" class="nav-link" id="nav-home">Home</a>
+        <a href="jobs.html" class="nav-link" id="nav-jobs">Jobs</a>
+        <a href="about.html" class="nav-link" id="nav-about">About</a>
+        <a href="contact.html" class="nav-link" id="nav-contact">Contact</a>
+      </div>
+      <a href="jobs.html" class="btn btn--primary btn--sm navbar__cta" id="nav-view-jobs">View Jobs</a>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ── Mobile Menu ── -->
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+  <aside class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <div class="mobile-menu__header">
+      <img src="assets/logo.svg" alt="NovaHire Technologies" width="150" height="36" />
+      <button class="mobile-menu__close" id="mobile-menu-close" aria-label="Close menu">
+        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <nav aria-label="Mobile navigation links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="jobs.html" class="mobile-nav-link">Jobs</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+      <div class="mobile-menu__cta">
+        <a href="jobs.html" class="btn btn--primary" style="width:100%">View Jobs</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main>
+    <!-- ── Page Header ── -->
+    <section class="page-header" id="about-header">
+      <div class="container">
+        <span class="section-label">About Us</span>
+        <h1 class="page-header__title">Who We Are</h1>
+        <p class="page-header__subtitle">Discover our mission, values, and what drives us forward every day.</p>
+      </div>
+    </section>
+
+    <!-- ── Company Introduction ── -->
+    <section class="section" id="about-intro">
+      <div class="container">
+        <div class="about-intro">
+          <div class="about-intro__text fade-in">
+            <span class="section-label">Our Story</span>
+            <h2>Bridging the Gap Between Talent and Opportunity</h2>
+            <p>
+              NovaHire Technologies is a technology-focused recruitment platform designed to connect skilled professionals with organizations that value innovation and growth. We believe that finding the right role should be a seamless, transparent experience.
+            </p>
+            <p>
+              Our platform streamlines the hiring process by focusing on what matters most — skills, culture fit, and potential. Whether you're a developer, designer, or quality engineer, NovaHire helps you find positions that align with your career goals.
+            </p>
+            <p class="demo-notice">
+              Note: NovaHire Technologies is a fictional company created for a web developer internship assignment.
+            </p>
+          </div>
+          <div class="about-visual fade-in">
+            <div class="about-visual__graphic">
+              <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M60 10L110 35V85L60 110L10 85V35L60 10Z" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+                <path d="M60 30L90 45V75L60 90L30 75V45L60 30Z" stroke="currentColor" stroke-width="2" opacity="0.5"/>
+                <path d="M60 50L75 58V72L60 80L45 72V58L60 50Z" fill="currentColor" opacity="0.2"/>
+                <circle cx="60" cy="60" r="6" fill="currentColor" opacity="0.6"/>
+              </svg>
+              <span>Innovation &middot; Growth &middot; Talent</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Mission ── -->
+    <section class="section section--alt" id="mission">
+      <div class="container text-center">
+        <span class="section-label">Our Mission</span>
+        <h2 class="section-title">Connecting Talent With Opportunity</h2>
+        <p class="section-subtitle">
+          Our mission is to empower professionals at every stage of their career by providing a transparent, efficient, and human-centered recruitment experience. We aim to make the job search less stressful and more rewarding.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── Values ── -->
+    <section class="section" id="values">
+      <div class="container text-center">
+        <span class="section-label">What Guides Us</span>
+        <h2 class="section-title">Our Core Values</h2>
+        <p class="section-subtitle">
+          These principles shape everything we do, from product development to how we interact with candidates and partners.
+        </p>
+        <div class="values-grid">
+          <div class="value-card fade-in" id="value-integrity">
+            <div class="value-card__icon">
+              <svg class="icon icon--lg" aria-hidden="true"><use href="#icon-shield"/></svg>
+            </div>
+            <h3 class="value-card__title">Integrity</h3>
+            <p class="value-card__text">We build trust through honesty and transparency in every interaction.</p>
+          </div>
+          <div class="value-card fade-in" id="value-innovation">
+            <div class="value-card__icon">
+              <svg class="icon icon--lg" aria-hidden="true"><use href="#icon-zap"/></svg>
+            </div>
+            <h3 class="value-card__title">Innovation</h3>
+            <p class="value-card__text">We embrace new ideas and technologies to continuously improve the hiring experience.</p>
+          </div>
+          <div class="value-card fade-in" id="value-inclusion">
+            <div class="value-card__icon">
+              <svg class="icon icon--lg" aria-hidden="true"><use href="#icon-users"/></svg>
+            </div>
+            <h3 class="value-card__title">Inclusion</h3>
+            <p class="value-card__text">We celebrate diversity and create equal opportunities for all candidates regardless of background.</p>
+          </div>
+          <div class="value-card fade-in" id="value-excellence">
+            <div class="value-card__icon">
+              <svg class="icon icon--lg" aria-hidden="true"><use href="#icon-award"/></svg>
+            </div>
+            <h3 class="value-card__title">Excellence</h3>
+            <p class="value-card__text">We hold ourselves to high standards and strive to deliver the best possible experience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── What We Offer ── -->
+    <section class="section section--alt" id="what-we-offer">
+      <div class="container text-center">
+        <span class="section-label">Benefits</span>
+        <h2 class="section-title">What We Offer</h2>
+        <p class="section-subtitle">
+          We invest in our people because great teams build great products.
+        </p>
+        <div class="features-grid">
+          <div class="feature-card fade-in" id="offer-learning">
+            <div class="feature-card__icon">
+              <svg class="icon icon--lg" aria-hidden="true"><use href="#icon-layers"/></svg>
+            </div>
+            <h3 class="feature-card__title">Learning &amp; Development</h3>
+            <p class="feature-card__text">Access to courses, workshops, and mentorship programs to sharpen your skills and grow your career.</p>
+          </div>
+          <div class="feature-card fade-in" id="offer-flexibility">
+            <div class="feature-card__icon">
+              <svg class="icon icon--lg" aria-hidden="true"><use href="#icon-clock"/></svg>
+            </div>
+            <h3 class="feature-card__title">Flexible Work Arrangements</h3>
+            <p class="feature-card__text">Choose from remote, hybrid, or on-site options. We trust our team to work where they're most productive.</p>
+          </div>
+          <div class="feature-card fade-in" id="offer-culture">
+            <div class="feature-card__icon">
+              <svg class="icon icon--lg" aria-hidden="true"><use href="#icon-heart"/></svg>
+            </div>
+            <h3 class="feature-card__title">Supportive Culture</h3>
+            <p class="feature-card__text">A collaborative, respectful environment where every voice is heard and every contribution matters.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="cta-section" id="about-cta">
+      <div class="container">
+        <h2>Join Our Team</h2>
+        <p>Explore our current openings and find a role that excites you.</p>
+        <a href="jobs.html" class="btn btn--secondary btn--lg" id="cta-view-positions">View Open Positions</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/logo.svg" alt="NovaHire Technologies" width="160" height="36" />
+          <p class="footer__tagline">Connecting Talent With Opportunity. A demo platform built for the Web Developer Internship Task.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Pages</h4>
+          <a href="index.html" class="footer__link">Home</a>
+          <a href="jobs.html" class="footer__link">Jobs</a>
+          <a href="about.html" class="footer__link">About</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+        </div>
+        <div>
+          <h4 class="footer__heading">Positions</h4>
+          <a href="apply.html?job=mern-stack-developer" class="footer__link">MERN Stack Developer</a>
+          <a href="apply.html?job=frontend-developer" class="footer__link">Frontend Developer</a>
+          <a href="apply.html?job=ui-ux-designer" class="footer__link">UI/UX Designer</a>
+          <a href="apply.html?job=python-developer" class="footer__link">Python Developer</a>
+          <a href="apply.html?job=qa-software-testing-engineer" class="footer__link">QA / Testing Engineer</a>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <p class="footer__link">hello@novahire.example</p>
+          <p class="footer__link">+91 00000 00000</p>
+          <p class="footer__link">Bangalore, India</p>
+          <span class="demo-notice">Demo contact details</span>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2026 NovaHire Technologies. This is a fictional company created for an internship assignment.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

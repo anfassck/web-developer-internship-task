@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apply — NovaHire Technologies</title>
+  <meta name="description" content="Apply for a position at NovaHire Technologies. Submit your application and take the next step in your career." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ── Header ── -->
+  <header class="header" id="header">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a href="index.html" class="navbar__logo" aria-label="NovaHire Technologies Home">
+        <img src="assets/logo.svg" alt="NovaHire Technologies" width="180" height="40" />
+      </a>
+      <div class="navbar__links">
+        <a href="index.html" class="nav-link" id="nav-home">Home</a>
+        <a href="jobs.html" class="nav-link" id="nav-jobs">Jobs</a>
+        <a href="about.html" class="nav-link" id="nav-about">About</a>
+        <a href="contact.html" class="nav-link" id="nav-contact">Contact</a>
+      </div>
+      <a href="jobs.html" class="btn btn--primary btn--sm navbar__cta" id="nav-view-jobs">View Jobs</a>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ── Mobile Menu ── -->
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+  <aside class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <div class="mobile-menu__header">
+      <img src="assets/logo.svg" alt="NovaHire Technologies" width="150" height="36" />
+      <button class="mobile-menu__close" id="mobile-menu-close" aria-label="Close menu">
+        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <nav aria-label="Mobile navigation links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="jobs.html" class="mobile-nav-link">Jobs</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+      <div class="mobile-menu__cta">
+        <a href="jobs.html" class="btn btn--primary" style="width:100%">View Jobs</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main>
+    <!-- ── Page Header ── -->
+    <section class="page-header" id="apply-header">
+      <div class="container">
+        <span class="section-label">Apply</span>
+        <h1 class="page-header__title">Submit Your Application</h1>
+        <p class="page-header__subtitle">Fill out the form below to apply. This is a demo form — no data is sent or stored.</p>
+      </div>
+    </section>
+
+    <!-- ── Application Form ── -->
+    <section class="section" id="apply-section">
+      <div class="container" style="max-width:720px">
+
+        <!-- Job Banner -->
+        <div class="apply-job-banner" id="apply-job-banner" style="display:none">
+          <div class="apply-job-banner__icon">
+            <svg class="icon icon--lg" aria-hidden="true"><use href="#icon-briefcase"/></svg>
+          </div>
+          <div class="apply-job-banner__text">
+            Applying for: <strong id="apply-job-title"></strong>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <form id="application-form" novalidate>
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="full-name" class="form-label">Full Name <span class="required">*</span></label>
+            <input type="text" id="full-name" name="fullName" class="form-input" placeholder="Enter your full name" required autocomplete="name" />
+            <div class="form-error" id="full-name-error">Please enter your full name.</div>
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email" class="form-label">Email <span class="required">*</span></label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required autocomplete="email" />
+            <div class="form-error" id="email-error">Please enter a valid email address.</div>
+          </div>
+
+          <!-- Phone -->
+          <div class="form-group">
+            <label for="phone" class="form-label">Phone Number <span class="required">*</span></label>
+            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+91 98765 43210" required autocomplete="tel" />
+            <div class="form-error" id="phone-error">Please enter a valid phone number (at least 7 digits).</div>
+          </div>
+
+          <!-- Qualification -->
+          <div class="form-group">
+            <label for="qualification" class="form-label">Qualification <span class="required">*</span></label>
+            <select id="qualification" name="qualification" class="form-select" required>
+              <option value="">Select your qualification</option>
+              <option value="high-school">High School</option>
+              <option value="diploma">Diploma</option>
+              <option value="bachelors">Bachelor's Degree</option>
+              <option value="masters">Master's Degree</option>
+              <option value="phd">PhD</option>
+              <option value="other">Other</option>
+            </select>
+            <div class="form-error" id="qualification-error">Please select your qualification.</div>
+          </div>
+
+          <!-- Skills -->
+          <div class="form-group">
+            <label for="skills" class="form-label">Skills <span class="required">*</span></label>
+            <input type="text" id="skills" name="skills" class="form-input" placeholder="e.g. JavaScript, React, Node.js" required />
+            <div class="form-hint">Comma-separated list of your key skills.</div>
+            <div class="form-error" id="skills-error">Please list at least one skill.</div>
+          </div>
+
+          <!-- Resume -->
+          <div class="form-group">
+            <label class="form-label">Resume <span class="required">*</span></label>
+            <div class="file-upload" id="resume-upload">
+              <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required aria-describedby="resume-hint" />
+              <div class="file-upload__icon">
+                <svg class="icon icon--xl" aria-hidden="true"><use href="#icon-upload"/></svg>
+              </div>
+              <div class="file-upload__text"><strong>Click to upload</strong> or drag and drop</div>
+              <div class="file-upload__hint" id="resume-hint">PDF, DOC, or DOCX (Max 5 MB)</div>
+              <div class="file-upload__name" id="resume-file-name"></div>
+            </div>
+            <div class="form-error" id="resume-error">Please upload your resume (PDF, DOC, or DOCX, max 5 MB).</div>
+          </div>
+
+          <!-- Cover Message -->
+          <div class="form-group">
+            <label for="cover-message" class="form-label">Cover Message</label>
+            <textarea id="cover-message" name="coverMessage" class="form-textarea" placeholder="Tell us why you're a great fit for this role..." rows="5"></textarea>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="btn btn--primary btn--lg" id="submit-btn" style="width:100%">
+            Submit Application
+          </button>
+        </form>
+
+        <!-- Success State -->
+        <div class="success-state" id="success-state">
+          <div class="success-state__icon">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+          </div>
+          <h2 class="success-state__title">Application Submitted!</h2>
+          <p class="success-state__text" id="success-message">
+            Thank you for your interest. This is a demo submission — no data has been sent or stored. In a real application, your information would be processed securely.
+          </p>
+          <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+            <a href="jobs.html" class="btn btn--primary" id="success-browse">Browse More Jobs</a>
+            <a href="index.html" class="btn btn--secondary" id="success-home">Back to Home</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/logo.svg" alt="NovaHire Technologies" width="160" height="36" />
+          <p class="footer__tagline">Connecting Talent With Opportunity. A demo platform built for the Web Developer Internship Task.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Pages</h4>
+          <a href="index.html" class="footer__link">Home</a>
+          <a href="jobs.html" class="footer__link">Jobs</a>
+          <a href="about.html" class="footer__link">About</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+        </div>
+        <div>
+          <h4 class="footer__heading">Positions</h4>
+          <a href="apply.html?job=mern-stack-developer" class="footer__link">MERN Stack Developer</a>
+          <a href="apply.html?job=frontend-developer" class="footer__link">Frontend Developer</a>
+          <a href="apply.html?job=ui-ux-designer" class="footer__link">UI/UX Designer</a>
+          <a href="apply.html?job=python-developer" class="footer__link">Python Developer</a>
+          <a href="apply.html?job=qa-software-testing-engineer" class="footer__link">QA / Testing Engineer</a>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <p class="footer__link">hello@novahire.example</p>
+          <p class="footer__link">+91 00000 00000</p>
+          <p class="footer__link">Bangalore, India</p>
+          <span class="demo-notice">Demo contact details</span>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2026 NovaHire Technologies. This is a fictional company created for an internship assignment.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/apply.js"></script>
+</body>
+</html>
