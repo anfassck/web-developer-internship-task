@@ -81,7 +81,8 @@ function showFieldError(inputId, errorId) {
 function showContactSuccess() {
   const form = document.getElementById("contact-form");
   const success = document.getElementById("contact-success");
-  const heading = form.closest("div").querySelector(".text-center");
+  const wrapper = form.parentElement;
+  const heading = wrapper ? wrapper.querySelector(".text-center") : null;
 
   form.style.display = "none";
   if (heading) heading.style.display = "none";
