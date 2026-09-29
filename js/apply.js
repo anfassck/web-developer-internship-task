@@ -60,11 +60,13 @@ function initFormValidation() {
 
   /* Clear errors on input */
   form.querySelectorAll(".form-input, .form-select, .form-textarea").forEach((el) => {
-    el.addEventListener("input", () => {
+    const clearError = () => {
       el.classList.remove("error");
       const errorEl = document.getElementById(`${el.id}-error`);
       if (errorEl) errorEl.classList.remove("visible");
-    });
+    };
+    el.addEventListener("input", clearError);
+    if (el.tagName === "SELECT") el.addEventListener("change", clearError);
   });
 
   form.addEventListener("submit", (e) => {
